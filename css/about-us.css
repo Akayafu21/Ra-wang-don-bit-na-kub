@@ -25,6 +25,7 @@ body{
 }
 
 nav{
+    z-index: 1040;
     width: 100%;
     height: 4rem;
     padding: 1rem 2rem;
@@ -46,6 +47,7 @@ nav a {
 }
 
 nav a:hover {
+    
     background-color: var(--grayray);
     color: var(--green-bitkub);
 }
@@ -139,4 +141,23 @@ align-items: center;
 
 .jeen{
     background-image: url(../adout-us-main/jeen.jpg);
+}
+
+@media only screen and (max-width:960px) {
+    nav{
+        width:100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        margin: 5rem 0;
+        width: 80%;
+    }
+    .top{
+        scale: 70%;
+    }
+    .down{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
